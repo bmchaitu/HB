@@ -6,7 +6,6 @@ import Grid from '@mui/material/Grid';
 import {Button} from "@mui/material";
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-// import TextField from '@mui/material/TextField';
 
 const PERSONS = 'persons';
 
@@ -28,8 +27,10 @@ function App() {
     const [showToast, setShowToast] = useState(false);
 
     useEffect(() => {
-        const localData = localStorage.getItem(PERSONS) || [];
-        setPersons(JSON.parse(localData));
+        const localData = localStorage.getItem(PERSONS);
+        if (localData) {
+            setPersons(JSON.parse(localData));
+        }
     }, [])
 
     const handleInputChange = ({  name, value }) => {
