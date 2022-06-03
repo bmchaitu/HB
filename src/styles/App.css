@@ -1,0 +1,172 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  margin: 10px;
+  padding-bottom: 20px;
+  align-items: center;
+  flex-direction: row;
+  background-color: #fff;
+}
+
+.input {
+  height: 20px;
+  width: 150px;
+  margin: 10px;
+  border-width: 0;
+  border-bottom-width: 1px;
+}
+
+.inner-container{
+  flex-direction: row;
+  margin: 20px;
+  width: 80%;
+}
+
+.person{
+  width: 100%;
+  margin-bottom: 30px;
+  height: 150px;
+  padding-left: 2%;
+  border-radius: 5px;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.name-mobile{
+  flex-direction: row;
+  background-color: brown;
+}
+
+.gridContainer{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.app{
+  display: flex;
+  width: 310px;
+  margin-top: 10px;
+  flex-direction: column;
+  background-color: #E2E3E9;
+}
+
+.persons-list{
+  margin-top: 60px;
+  background-color: #E2E3E9;
+  width: 90%;
+}
+
+.add-button{
+  margin-top: 15px;
+  background-color: red;
+}
+
+.buttonContainer{
+  margin-top: 25px;
+  margin-left: 10px;
+  width: 300px;
+}
+
+.inputLabel{
+  font-size: 15px;
+  font-weight: 500;
+  color: #66676B;
+}
+
+.personLabel{
+  font-size: 15px;
+  font-weight: 500;
+  color: #C4CDC7;
+}
+
+.personValue{
+  font-size: 15px;
+  font-weight: 700;
+  color: blueviolet;
+}
+
+.separator{
+  background-color: #CFC1DA;
+  height: 50px;
+}
+
+.header{
+  font-size: 25px;
+  font-weight: 600;
+  color: blueviolet;
+  text-align: center;
+}
+
+.headerContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 300px;
+  padding-top: 10px;
+}
+
+.line{
+  height: 5px;
+  width: 100%;
+  background-color: white;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.helperText{
+  font-size: 12px;
+  color: red;
+}
+
+.toast{
+  background-color: #B7E9C1;
+  width: 55%;
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.toastMessage{
+  font-weight: 600;
+  color: black;
+}
